@@ -38,6 +38,7 @@ body {
   position: sticky;
   top:0;
   z-index: 10;
+  height: 100px;
   /* width: 1263.33px;
   height: 113px; */
   /* justify-content:space-around;
@@ -47,20 +48,26 @@ body {
 .icon{
   height: 80px;
   width: 80px;
-  position: relative;
-  top: 20px;
-  right: 80px;
+  position: absolute;
+  left: 40px;
+  top: 8px;
+  /* top: 20px;
+  right: 80px; */
 }
 .heading{
-  position: relative;
-  right: 400px;
-  bottom: 10px;
+  position: absolute;
+  top: 10px;
+  left: 110px;
+  /* position: relative;
+  right: 340px; */
+  /* bottom: 10px; */
 }
 #date{
   /* take out of box element and position relative to its parent and if no parent it takes relative to html element or body */
   /* position: absolute; */
-  position: relative;
-  bottom: 10px;
+  position: absolute;
+  top: 30px;
+  right: 100px;
 }
 
 .news-text{
@@ -238,27 +245,22 @@ body {
   margin-top: 0;
 }
 /* --------------------------------FOOTER SECTION------------------------------ */
-.footer-bar{
+#bottom{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: white;
   color: black;
-  /* height: 89.33px;
-  width:1263.33px; */
-
-}
-.footer-icon1{
-  margin-left: 568px;
-}
-.fa-brands,.fa-solid{
-  margin-top: 20px;
   padding: 7px;
 
 }
 .footer-icon:hover{
   color: black;
 }
+.footer-icon{
+  padding: 10px;
+}
 .footer-text{
-  /* margin-left: 550px; */
-
   text-align: center;
   line-space: 1.5;
   margin-bottom: 0;
