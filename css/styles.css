@@ -311,3 +311,32 @@ body {
   color: #fff;
   text-decoration: none;
 }
+
+
+/* --------------------PREDICTIONS SECTION------------------------- */
+
+.chart{
+  margin: auto;
+  width: 90%;
+  transition: box-shadow .3s;
+  border-radius: 5px;
+}
+
+.chart:hover{
+  box-shadow: 0 0 20px rgba(108, 122, 137);
+}
+
+/* ----------------------------GUIDE SECTION----------------------------- */
+
+.parent-div1,.parent-div2{
+  display: flex;
+  justify-content: space-around;
+}
+.side-div1,.side-div2{
+  padding: 10px;
+  border-radius: 5px;
+  transition: box-shadow .3s;
+}
+.side-div1:hover,.side-div2:hover{
+  box-shadow: 0 0 20px rgba(108, 122, 137);
+}
