@@ -1,4 +1,4 @@
- //jshint esversion: 6
+//jshint esversion: 6
 // fetch("https://crypto-market-news.p.rapidapi.com/crypto/bitcoin", {
 // 	"method": "GET",
 // 	"headers": {

@@ -13,7 +13,7 @@ fetch("https://investing-cryptocurrency-markets.p.rapidapi.com/coins/get-news?pa
 .then(completeData => {
   let html = "";
 	var final_news = completeData.data[0].screen_data.news;
-  final_news = final_news.slice(0 , 2);
+  final_news = final_news.slice(0 ,3);
   final_news.map((values) => {
     var headline = values.HEADLINE.slice(0,75);
     html += `

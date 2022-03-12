@@ -12,6 +12,8 @@
     <link rel="icon" href="https://t4.ftcdn.net/jpg/04/34/74/41/240_F_434744168_Dk2Fg26hQKRuI9oBwITY5VwdXiPm9N5D.jpg">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/df4a292e2b.js" crossorigin="anonymous"></script>
+    <!--plotly -->
+    <script src='https://cdn.plot.ly/plotly-2.9.0.min.js'></script>
   </head>
   <body>
 
@@ -25,8 +27,15 @@
 
       <div class="news-text">
         <a href="news.html">
-          <div class="news" id="news-hover">
+          <div class="news">
+            <div class="news-head">
+        			<b style="font-size:1.3rem;">News</b>
+        			<button class="news-btn" type="button"  name="button">Show All</button>
+        		</div>
+            <div id="news-hover">
 
+            </div>
+            
           </div>
         </a>
 
@@ -81,19 +90,22 @@
         <div class="parent-div1">
           <div class="" style="width:700px;">
             <b style="font-size:1.3rem;">Crypto Fear & Greed Index</b>
-            <br><br>Each day, we analyze emotions and sentiments from different sources and crunch them into one simple number: The Fear & Greed Index for Bitcoin and other large cryptocurrencies.
-            <br><br>The crypto market behaviour is very emotional. People tend to get greedy when the market is rising which results in FOMO (Fear of missing out). Also, people often sell their coins in irrational reaction of seeing red numbers. With our Fear and Greed Index, we try to save you from your own emotional overreactions. There are two simple assumptions:
+            <br><br><br>Each day, we analyze emotions and sentiments from different sources and crunch them into one simple number: The Fear & Greed Index for Bitcoin and other large cryptocurrencies.
+            <br><br><br>The crypto market behaviour is very emotional. People tend to get greedy when the market is rising which results in FOMO (Fear of missing out). Also, people often sell their coins in irrational reaction of seeing red numbers. With our Fear and Greed Index, we try to save you from your own emotional overreactions. There are two simple assumptions:
             <ul>
-              <li>Extreme fear can be a sign that investors are too worried. That could be a buying opportunity.</li>
-              <li>When Investors are getting too greedy, that means the market is due for a correction.</li>
+              <br><li>Extreme fear can be a sign that investors are too worried. That could be a buying opportunity.</li>
+              <br><li>When Investors are getting too greedy, that means the market is due for a correction.</li>
             </ul>
           </div>
 
           <div class="side-div1" style="width:400px;">
             <b style="font-size:1.3rem;">Bitcoin FGI Meter</b><br>
-            Crpto Market Sentiment Analysis <br>
-            <img style="height:200px; width:200px; margin:7px;" src="https://alternative.me/crypto/fear-and-greed-index.png" alt="Latest Crypto Fear & Greed Index" />
-            <br><b style="font-size:1.3rem;"><i class="fa-solid fa-lightbulb"></i>Tip</b><br>
+            Crpto Market Sentiment Analysis
+            <div id="fgi" style="padding-left:20px;">
+
+            </div>
+            <!-- <img style="height:200px; width:200px; margin:7px;" src="https://alternative.me/crypto/fear-and-greed-index.png" alt="Latest Crypto Fear & Greed Index" /> -->
+            <b style="font-size:1.3rem;"><i class="fa-solid fa-lightbulb"></i>Tip</b><br>
             Watch for strong currents of fear. These opportunities are great for investment, provided you stay in for the long haul.
           </div>
         </div>
@@ -106,10 +118,10 @@
 
           <div class="side-div2" style="width:400px;">
             <br><br><b style="font-size:1.3rem;">RSI</b>
-            <div id="rsi">
+            <div id="rsi" style="padding-left:20px;">
 
             </div>
-            <br><br>The Relative Strength Index (RSI) chart is a momentum based visualization for the Bitcoin market. We use the RSI to measure the speed as well as the magnitude of directional price movements in Bitcoin. Depending on how fast a price changes and by how much, an RSI score is given to the month being observed relative to the previous 12 months.
+            The Relative Strength Index (RSI) chart is a momentum based visualization for the Bitcoin market. We use the RSI to measure the speed as well as the magnitude of directional price movements in Bitcoin. Depending on how fast a price changes and by how much, an RSI score is given to the month being observed relative to the previous 12 months.
             <ul>
               <li> High RSI means that price movements are very positive.</li>
               <li>Low RSI means that price movements are very negative.</li>
@@ -152,10 +164,23 @@
 
 
     <section id="tech">
-      <div class="tech">
+      <div class="tech" style="padding:13px;">
         <h2>Tech</h2>
+        <b style="font-size:1.3rem;">Algorithms, Cryptography and Blockchain Are at the Heart of It All</b>
+        <br><br>
+        When cryptocurrencies are designed to be used as money, transactions are stored on a special kind of secure database called a blockchain, which serves as a ledger of all coded transactions. Think of it as a checkbook for cryptocurrency.
+        <br><br>
+        Discover: <a class="tech-a" style="text-decoration:none; color:inherit;" href="https://www.gobankingrates.com/retirement/planning/should-crypto-nfts-be-part-your-retirement-plan/"><p>Should Crypto and NFTs Be Part of Your Retirement Plan?</p></a>
+        <br><br>
+        Once entered into the blockchain, no one can ever change an entry in the database without meeting specific conditions. Everyone involved can see the public record of all transitions.
+        <br><br>
+        Blockchain technology, therefore, allows cryptocurrency to achieve its three most important defining features:
 
-
+        <ul>
+          <li>Transparency</li>
+          <li>Immutability</li>
+          <li>Decentralization</li>
+        </ul>
 
       </div>
     </section>
@@ -202,9 +227,11 @@
     </section>
 
 
+
   <script src="index.js" charset="utf-8"></script>
   <script src="newshover.js" charset="utf-8"></script>
   <script src="rsi.js" charset="utf-8"></script>
+  <script src="fgi.js" charset="utf-8"></script>
 
   </body>
 </html>
